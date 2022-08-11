@@ -9,6 +9,8 @@ use App\Http\Controllers\api\UserController;
 Route::get('lista', [ListaController::class, 'index']);
 Route::get('listaUserActive', [ListaController::class, 'getUserListActive']);
 Route::get('listaUserInactive', [ListaController::class, 'getUserListInactive']);
+Route::post('listaUserActive', [ListaController::class, 'getUserListActive']);
+Route::post('listaUserInactive', [ListaController::class, 'getUserListInactive']);
 Route::get('lista/{id}', [ListaController::class, 'show']);
 Route::post('lista', [ListaController::class, 'store']);
 Route::put('lista/{id}', [ListaController::class, 'update']);
